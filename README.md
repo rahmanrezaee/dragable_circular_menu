@@ -1,14 +1,38 @@
-# dragable_float_circular_menu
+# Dragable CirCular Menu
 
-A new Flutter package project.
+[![pub package](https://img.shields.io/pub/v/shimmer.svg)](https://pub.dartlang.org/packages/shimmer) ![](https://github.com/hnvn/flutter_shimmer/workflows/unit%20test/badge.svg)
 
-## Getting Started
+A package provides an easy way to add shimmer effect in Flutter project
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+<p>
+    <img src="https://github.com/hnvn/flutter_shimmer/blob/master/screenshots/loading_list.gif?raw=true"/>
+    <img src="https://github.com/hnvn/flutter_shimmer/blob/master/screenshots/slide_to_unlock.gif?raw=true"/>
+</p>
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## How to use
+
+```dart
+import 'package:shimmer/shimmer.dart';
+
+```
+
+```dart
+SizedBox(
+  width: 200.0,
+  height: 100.0,
+  child: Shimmer.fromColors(
+    baseColor: Colors.red,
+    highlightColor: Colors.yellow,
+    child: Text(
+      'Shimmer',
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        fontSize: 40.0,
+        fontWeight:
+        FontWeight.bold,
+      ),
+    ),
+  ),
+);
+
+```
