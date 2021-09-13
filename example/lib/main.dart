@@ -51,7 +51,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return DragableCircularMenu(
       items: [
-        CircularMenuItem
+        CircularMenuItem(),
+        CircularMenuItem(),
+        CircularMenuItem(),
       ],
       child: Scaffold(
         appBar: AppBar(
