@@ -3,36 +3,29 @@
 [![pub package](https://img.shields.io/pub/v/shimmer.svg)](https://pub.dartlang.org/packages/shimmer) ![](https://github.com/hnvn/flutter_shimmer/workflows/unit%20test/badge.svg)
 
 A package provides dragable menu in Flutter project
-<!-- 
+
 <p>
-    <img src="https://github.com/hnvn/flutter_shimmer/blob/master/screenshots/loading_list.gif?raw=true"/>
-    <img src="https://github.com/hnvn/flutter_shimmer/blob/master/screenshots/slide_to_unlock.gif?raw=true"/>
-</p> -->
+    <img src="image/demo.gif" height="300em" />
+   
+</p> 
 
 ## How to use
-<!-- 
+
 ```dart
-import 'package:shimmer/shimmer.dart';
+import 'package:dragable_circular_menu/dragable_circular_menu.dart';
 
 ```
 
 ```dart
-SizedBox(
-  width: 200.0,
-  height: 100.0,
-  child: Shimmer.fromColors(
-    baseColor: Colors.red,
-    highlightColor: Colors.yellow,
-    child: Text(
-      'Shimmer',
-      textAlign: TextAlign.center,
-      style: TextStyle(
-        fontSize: 40.0,
-        fontWeight:
-        FontWeight.bold,
-      ),
+DragableCircularMenu(
+  items: [
+    CircularMenuItem(
+        iconColor: color,
+        icon: icon,
+        onTap: () {}
     ),
-  ),
+  ],
+  child: child // add the child 
 );
 
 ``` -->
